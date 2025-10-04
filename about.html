@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Agastya Tehlan</title>
+  <style>
+    :root{--bg:#0f1115;--card:#13151a;--muted:#9aa3b2;--accent:#5fc3ff;--radius:12px;--maxw:1100px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:linear-gradient(180deg,#08090b,#0f1115);color:#e6eef6;display:flex;justify-content:center;}
+    .wrap{width:95%;max-width:var(--maxw);padding:28px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7ad0ff);display:flex;align-items:center;justify-content:center;color:#031018;font-weight:700}
+    nav a{color:var(--muted);margin-left:12px;text-decoration:none}
+    .hero{margin-top:28px;background:var(--card);padding:22px;border-radius:var(--radius)}
+    h1{margin:0}
+    .bio{margin-top:12px;color:var(--muted);line-height:1.6}
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:30px;color:var(--muted);text-align:center;padding-bottom:18px;border-top:1px solid rgba(255,255,255,0.02)}
+    @media(max-width:760px){.cards{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="index.html" style="display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit">
+        <div class="logo">N</div>
+        <div>
+          <div style="font-weight:700">NeuroAI</div>
+          <div style="font-size:12px;color:var(--muted)">Modular AI for Robots, Drones & Beyond</div>
+        </div>
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="dimag.html">Dimag 1.0</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <h1>Agastya Tehlan</h1>
+      <p class="bio">
+        Hi — I'm Agastya. I'm the creator behind NeuroAI and the Dimag chip.
+        I build modular AI systems designed to bring adaptive behaviour to machines of all sizes.
+        My focus is on safe, explainable control and lightweight perception that runs on-device.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <strong>Background</strong>
+          <p class="small">Engineer with experience in robotics, embedded systems, and machine learning. Built drone autonomy stacks, sensor fusion pipelines, and compact inference runtimes.</p>
+        </div>
+        <div class="card">
+          <strong>Philosophy</strong>
+          <p class="small">Make intelligence modular and responsible. Provide clear modes (assist / autonomy / supervised) and strong safety constraints for real-world deployment.</p>
+        </div>
+        <div class="card">
+          <strong>Projects</strong>
+          <p class="small">Dimag 1.0 — a compact AI chip; neuroSDK — lightweight runtime; field demos with drones and industrial automation.</p>
+        </div>
+        <div class="card">
+          <strong>Contact</strong>
+          <p class="small">Email: <a href="mailto:agastya@example.com" style="color:var(--muted)">agastya@example.com</a><br/>LinkedIn / GitHub (links to be added)</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      © 2025 Agastya Tehlan — NeuroAI
+    </footer>
+  </div>
+</body>
+</html>

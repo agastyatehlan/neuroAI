@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dimag 1.0 — NeuroAI</title>
+  <style>
+    :root{--bg:#0f1115;--card:#13151a;--muted:#9aa3b2;--accent:#5fc3ff;--radius:12px;--maxw:1100px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:linear-gradient(180deg,#08090b,#0f1115);color:#e6eef6;display:flex;justify-content:center}
+    .wrap{width:95%;max-width:var(--maxw);padding:28px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7ad0ff);display:flex;align-items:center;justify-content:center;color:#031018;font-weight:700}
+    nav a{color:var(--muted);margin-left:12px;text-decoration:none}
+    .panel{background:var(--card);padding:22px;border-radius:var(--radius);margin-top:24px}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:18px}
+    .specs{color:var(--muted);line-height:1.6}
+    .spec-list{margin-top:12px;display:flex;flex-direction:column;gap:10px}
+    .spec{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .badge{display:inline-block;padding:6px 10px;background:rgba(95,195,255,0.12);color:var(--accent);border-radius:999px;font-weight:700}
+    .btn{background:var(--accent);color:#02131a;padding:10px 14px;border-radius:10px;border:none;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
+    footer{margin-top:30px;color:var(--muted);text-align:center;padding-bottom:18px;border-top:1px solid rgba(255,255,255,0.02)}
+    @media(max-width:980px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="index.html" style="display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit">
+        <div class="logo">N</div>
+        <div>
+          <div style="font-weight:700">NeuroAI</div>
+          <div style="font-size:12px;color:var(--muted)">Modular AI</div>
+        </div>
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="dimag.html">Dimag 1.0</a>
+      </nav>
+    </header>
+
+    <main class="panel">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <div style="font-size:14px;color:var(--muted)">Introducing</div>
+          <h1 style="margin:6px 0 0 0">Dimag 1.0</h1>
+          <div style="margin-top:6px"><span class="badge">On-device AI</span> <span style="margin-left:8px;color:var(--muted)">Low-power • Secure • Deterministic</span></div>
+        </div>
+        <div style="min-width:160px;text-align:right">
+          <div style="font-size:12px;color:var(--muted)">Starting at</div>
+          <div style="font-weight:800;font-size:1.2rem">Coming Soon</div>
+          <div style="margin-top:8px"><a class="btn" href="mailto:agastya@example.com">Request Info</a></div>
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top:18px">
+        <section>
+          <h3 style="margin:0 0 8px 0">What Dimag does</h3>
+          <p class="specs">Dimag 1.0 is a compact inference and control module that provides perception, decision-making, and behaviour policy execution so devices can act with human-like adaptiveness while remaining safe and auditable.</p>
+
+          <div class="spec-list">
+            <div class="spec"><strong>Plug-and-play</strong><div class="small" style="color:var(--muted);margin-top:6px">Supports SPI / I2C / UART / CAN — easy integration into robotics and automotive stacks.</div></div>
+            <div class="spec"><strong>Multiple Modes</strong><div style="color:var(--muted);margin-top:6px">Autonomous, Assist, Safe-Emergency, Simulation. Switch modes programmatically or via a secure channel.</div></div>
+            <div class="spec"><strong>Use Cases</strong><div style="color:var(--muted);margin-top:6px">Drones (navigation & obstacle avoidance), Robotics (manipulation & perception), Customer service (speech + intent), Specialized military-grade deployments with hardened features.</div></div>
+            <div class="spec"><strong>Safety & Security</strong><div style="color:var(--muted);margin-top:6px">Encrypted models, signed firmware updates, runtime constraints, and clear audit logs to support safe operation.</div></div>
+          </div>
+        </section>
+
+        <aside style="display:flex;flex-direction:column;gap:12px">
+          <div style="background:linear-gradient(180deg,rgba(95,195,255,0.06),transparent);padding:14px;border-radius:12px;">
+            <strong>Tech specs (summary)</strong>
+            <ul style="color:var(--muted);margin-top:8px">
+              <li>Low-power NPU + microcontroller</li>
+              <li>On-device model runtime (quantized)</li>
+              <li>Interfaces: SPI, I2C, UART, CAN</li>
+              <li>Secure boot & signed updates</li>
+            </ul>
+          </div>
+
+          <div style="background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:14px;border-radius:12px;">
+            <strong>Integration</strong>
+            <p style="color:var(--muted);margin:8px 0 0 0">We provide SDKs and examples to connect Dimag to sensors, cameras, and control loops. Example stacks for drone autopilots and ROS are available.</p>
+          </div>
+
+          <div style="background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent); padding:14px;border-radius:12px;">
+            <strong>Demo</strong>
+            <p style="color:var(--muted);margin:8px 0 0 0">Field demos available on request. Email <a href="mailto:agastya@example.com" style="color:var(--muted)">agastya@example.com</a></p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      © 2025 NeuroAI — Dimag 1.0
+    </footer>
+  </div>
+</body>
+</html>
