@@ -1,1 +1,162 @@
-<h1 style="color:red;">TEST WEBSITE WORKING</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroAI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#667eea,#764ba2);
+color:white;
+}
+
+nav{
+position:fixed;
+width:100%;
+padding:20px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.2);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffd369;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+header h1{
+font-size:60px;
+font-weight:700;
+}
+
+header p{
+margin-top:20px;
+font-size:20px;
+opacity:0.9;
+}
+
+section{
+padding:100px 10%;
+}
+
+.articles{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.card{
+background:white;
+color:#333;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.about{
+background:white;
+color:#333;
+border-radius:20px;
+padding:60px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:rgba(0,0,0,0.2);
+margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>NeuroAI</h2>
+<div>
+<a href="#">Home</a>
+<a href="#articles">Articles</a>
+<a href="#about">About Us</a>
+</div>
+</nav>
+
+<header>
+<h1>Welcome to NeuroAI</h1>
+<p>The Future of Artificial Intelligence</p>
+</header>
+
+<section id="articles">
+<h2>Latest Articles</h2>
+<div class="articles">
+<div class="card">
+<h3>AI in 2026</h3>
+<p>Discover how AI is transforming the world.</p>
+</div>
+
+<div class="card">
+<h3>Machine Learning</h3>
+<p>Understanding deep learning and neural networks.</p>
+</div>
+
+<div class="card">
+<h3>Future Tech</h3>
+<p>Exploring tomorrow’s innovations today.</p>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="about">
+<h2>About Us</h2>
+<br>
+<p><strong>Name:</strong> AGASTYA TEHLAN</p>
+<p><strong>Friend:</strong> ROHIT SINGH</p>
+<p><strong>Friend:</strong> ABHISHEK PANDEY</p>
+<br>
+<p>We created NeuroAI to explore the future of Artificial Intelligence and share knowledge with the world.</p>
+</div>
+</section>
+
+<footer>
+© 2026 NeuroAI | Created by Agastya & Team
+</footer>
+
+</body>
+</html>
+
